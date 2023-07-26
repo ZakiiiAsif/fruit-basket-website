@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head class="bg-white">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fruit Basket Website</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.2.1/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Open+Sans:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .font-lato {
+        font-family: 'Lato', sans-serif;
+      }
+    </style>
+  </head>
+  <body class="font-lato">
+    <header class="md:container md:mx-auto">
+      <nav class="rounded-full py-4 m-4 rounded-full">
+        <div class="navbar bg-[#F85559]">
+          <div class="navbar-start lg:flex">
+            <div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 rounded-box w-52 menu-horizontal px-1 text-white"
+              >
+                <li><a>Home</a></li>
+                <li><a>About Us</a></li>
+                <li><a>Shop</a></li>
+                <li><a>All Fruits</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="navbar-center flex">
+            <img src="images/logo.png" alt="" />
+            <a class="btn btn-ghost normal-case text-xl text-white"
+              >Fruit Burst</a
+            >
+          </div>
+          <div class="navbar-end">
+            <input
+              type="text"
+              placeholder="Search here"
+              class="input input-bordered w-full max-w-xs bg-white"
+            />
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <div class="carousel w-full rounded-lg">
+          <div id="slide1" class="carousel-item relative w-full">
+            <div
+              class="hero min-h-screen"
+              style="background-image: url(images/banner1.png)"
+            >
+              <div class="hero-overlay bg-opacity-60"></div>
+              <div class="hero-content text-center text-neutral-content">
+                <div class="max-w-md">
+                  <h1 class="mb-5 text-5xl font-bold">
+                    Exotic tastes at your<br />doorstep
+                  </h1>
+                  <p class="mb-5">We supply highly quality organic products</p>
+                  <button class="btn btn-primary">Get Started</button>
+                </div>
+              </div>
+            </div>
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide4" class="btn btn-circle">❮</a>
+              <a href="#slide2" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide2" class="carousel-item relative w-full">
+            <img src="/images/banner2.png" class="w-full" />
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide1" class="btn btn-circle">❮</a>
+              <a href="#slide3" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide3" class="carousel-item relative w-full">
+            <img src="/images/banner3.png" class="w-full" />
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide2" class="btn btn-circle">❮</a>
+              <a href="#slide4" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+          <div id="slide4" class="carousel-item relative w-full">
+            <img src="/images/banner4.png" class="w-full" />
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide3" class="btn btn-circle">❮</a>
+              <a href="#slide1" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="flex">
+          <div>
+            <h2>Deal of the day</h2>
+            <p>
+              Contrary to popular belief, is not simply random text. It has
+              roots in a piece of classical<br />Latin literature from 45 BC,
+              making it over 2000 years old.
+            </p>
+          </div>
+          <div>
+            <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+              <div class="flex flex-col">
+                <span class="countdown font-mono text-5xl">
+                  <span style="--value: 15"></span>
+                </span>
+                days
+              </div>
+              <div class="flex flex-col">
+                <span class="countdown font-mono text-5xl">
+                  <span style="--value: 10"></span>
+                </span>
+                hours
+              </div>
+              <div class="flex flex-col">
+                <span class="countdown font-mono text-5xl">
+                  <span style="--value: 24"></span>
+                </span>
+                min
+              </div>
+              <div class="flex flex-col">
+                <span class="countdown font-mono text-5xl">
+                  <span style="--value: 52"></span>
+                </span>
+                sec
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
