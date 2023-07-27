@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html data-theme="light" lang="en">
   <head class="bg-white">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -166,19 +166,19 @@
             <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
               <div class="flex flex-col">
                 <span class="countdown font-mono text-5xl">
-                  <span style="--value: 15"></span>
+                  <span style="--value: 15"></span>:
                 </span>
                 days
               </div>
               <div class="flex flex-col">
                 <span class="countdown font-mono text-5xl">
-                  <span style="--value: 10"></span>
+                  <span style="--value: 10"></span>:
                 </span>
                 hours
               </div>
               <div class="flex flex-col">
                 <span class="countdown font-mono text-5xl">
-                  <span style="--value: 24"></span>
+                  <span style="--value: 24"></span>:
                 </span>
                 min
               </div>
@@ -199,7 +199,7 @@
               <img src="/images/apple.png" alt="Apple" class="rounded-xl" />
             </figure>
             <div class="card-body items-center text-center">
-              <p>12.90$ - 18.85$</p>
+              <p class="font-bold">12.90$ - 18.85$</p>
               <h2 class="card-title">Apples</h2>
               <div class="rating rating-lg rating-half">
                 <input type="radio" name="rating-10" class="rating-hidden" />
@@ -266,7 +266,7 @@
               <img src="/images/orange.png" alt="Orange" class="rounded-xl" />
             </figure>
             <div class="card-body items-center text-center">
-              <p>14.90$ - 20.85$</p>
+              <p class="font-bold">14.90$ - 20.85$</p>
               <h2 class="card-title">Oranges</h2>
               <div class="rating rating-lg rating-half">
                 <input type="radio" name="rating-10" class="rating-hidden" />
@@ -404,7 +404,7 @@
               <img src="/images/banana.png" alt="Banana" class="rounded-xl" />
             </figure>
             <div class="card-body items-center text-center">
-              <p>10.90$ - 18.85$</p>
+              <p class="font-bold">10.90$ - 18.85$</p>
               <h2 class="card-title">Bananas!</h2>
               <div class="rating rating-lg rating-half">
                 <input type="radio" name="rating-10" class="rating-hidden" />
@@ -468,14 +468,14 @@
           </div>
         </div>
         <div class="px-3 py-3 rounded-lg items-center text-center">
-          <button class="bg-[#F85559] font-bold pt-2 pb-2 pr-2 pl-2">
+          <button class="bg-[#F85559] font-bold pt-2 pb-2 pr-2 pl-2 rounded-md">
             Shop All
           </button>
         </div>
       </section>
       <section>
-        <div>
-          <div class="text-center justify-center pt-9">
+        <div class="order-3 lg:grid-cols-3 sm:grid-col">
+          <div class="text-center justify-center pt-12 mb-9">
             <p class="font-extrabold text-5xl pb-5">Why Choose Us</p>
             <p class="font-medium text-base">
               Contrary to popular belief, is not simply random text. It has
@@ -509,18 +509,18 @@
                 </p>
               </div>
             </div>
-            <div>
+            <div class="pb-24">
               <img src="images/whychoose1.png" alt="" />
             </div>
             <div class="mr-6 pr-6">
-              <div>
+              <div class="text-right">
                 <p class="font-extrabold text-2xl">Integrated Supplier</p>
                 <p>
                   Professional employees are there for you to pick<br />the most
                   amazing and fresh fruits.
                 </p>
               </div>
-              <div>
+              <div class="text-right">
                 <p class="font-extrabold text-2xl pb-2 pt-5">
                   Sustainable Practice
                 </p>
@@ -529,7 +529,7 @@
                   amazing and fresh fruits.
                 </p>
               </div>
-              <div>
+              <div class="text-right">
                 <p class="font-extrabold text-2xl pb-2 pt-5">
                   The Benefits Only
                 </p>
@@ -543,12 +543,12 @@
         </div>
       </section>
     </main>
-    <footer class="pt-20">
+    <footer class="pt-20 bg-black">
       <div class="text-center justify-center flex pb-5">
         <img src="images/logo.png" alt="" />
-        <a class="btn btn-ghost normal-case text-xl text-white">Fruit Burst</a>
+        <a class="btn btn-ghost normal-case text-4xl text-white">Fruit Burst</a>
       </div>
-      <div class="flex justify-center text-center p-3 m-3 gap-5">
+      <div class="flex justify-center text-center p-3 m-3 gap-5 text-white">
         <p>Home</p>
         <p>About Us</p>
         <p>Shop</p>
